@@ -1,0 +1,14 @@
+E:\my_project\LanguageStudyingWebApps\LanguageStudyingWebApps\bin\Debug\netcoreapp2.1\LanguageStudyingWebApps.deps.json
+E:\my_project\LanguageStudyingWebApps\LanguageStudyingWebApps\bin\Debug\netcoreapp2.1\LanguageStudyingWebApps.runtimeconfig.json
+E:\my_project\LanguageStudyingWebApps\LanguageStudyingWebApps\bin\Debug\netcoreapp2.1\LanguageStudyingWebApps.runtimeconfig.dev.json
+E:\my_project\LanguageStudyingWebApps\LanguageStudyingWebApps\bin\Debug\netcoreapp2.1\LanguageStudyingWebApps.dll
+E:\my_project\LanguageStudyingWebApps\LanguageStudyingWebApps\bin\Debug\netcoreapp2.1\LanguageStudyingWebApps.pdb
+E:\my_project\LanguageStudyingWebApps\LanguageStudyingWebApps\obj\Debug\netcoreapp2.1\LanguageStudyingWebApps.csprojAssemblyReference.cache
+E:\my_project\LanguageStudyingWebApps\LanguageStudyingWebApps\obj\Debug\netcoreapp2.1\LanguageStudyingWebApps.csproj.CoreCompileInputs.cache
+E:\my_project\LanguageStudyingWebApps\LanguageStudyingWebApps\obj\Debug\netcoreapp2.1\LanguageStudyingWebApps.RazorAssemblyInfo.cache
+E:\my_project\LanguageStudyingWebApps\LanguageStudyingWebApps\obj\Debug\netcoreapp2.1\LanguageStudyingWebApps.RazorAssemblyInfo.cs
+E:\my_project\LanguageStudyingWebApps\LanguageStudyingWebApps\obj\Debug\netcoreapp2.1\LanguageStudyingWebApps.AssemblyInfoInputs.cache
+E:\my_project\LanguageStudyingWebApps\LanguageStudyingWebApps\obj\Debug\netcoreapp2.1\LanguageStudyingWebApps.AssemblyInfo.cs
+E:\my_project\LanguageStudyingWebApps\LanguageStudyingWebApps\obj\Debug\netcoreapp2.1\LanguageStudyingWebApps.RazorTargetAssemblyInfo.cache
+E:\my_project\LanguageStudyingWebApps\LanguageStudyingWebApps\obj\Debug\netcoreapp2.1\LanguageStudyingWebApps.dll
+E:\my_project\LanguageStudyingWebApps\LanguageStudyingWebApps\obj\Debug\netcoreapp2.1\LanguageStudyingWebApps.pdb

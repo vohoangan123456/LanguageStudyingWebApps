@@ -1,0 +1,2 @@
+E:\my_project\LanguageStudyingWebApps\Languages.Common\obj\Debug\Languages.Common.csprojAssemblyReference.cache
+E:\my_project\LanguageStudyingWebApps\Languages.Common\obj\Debug\Languages.Common.csproj.CoreCompileInputs.cache

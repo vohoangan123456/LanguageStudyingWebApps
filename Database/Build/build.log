@@ -1,0 +1,24 @@
+Buildfile: file:///E:/my_project/LanguageStudyingWebApps/Database/Build/main.build
+Target framework: Microsoft .NET Framework 4.0
+Target(s) specified: db.upgrade.local 
+
+[loadtasks] Scanning directory "E:\my_project\LanguageStudyingWebApps\Database\Build\Tools\NAnt.Tasks\Release" for extension assemblies.
+
+db.upgrade.local:
+
+
+db.upgrade.executing:
+
+     [echo] -------------------- UPGRADE DATABASE - Inspection - LanguagesDB ON VN-ANVO2 --------------------
+     [echo] Script file: E:\my_project\LanguageStudyingWebApps\Database\Upgrades\Upgrade_01.00.00.001.sql
+     [copy] Copying 1 file to 'E:\my_project\LanguageStudyingWebApps\Database\Build\parsed_sql_script.sql'.
+      [sql] 1 records affected
+      [sql] ----- Script action: create CRUD for tblCategories -----
+      [sql] ----- The database update succeeded -----
+      [sql] 3 records affected
+   [delete] Deleting file E:\my_project\LanguageStudyingWebApps\Database\Build\parsed_sql_script.sql.
+
+BUILD SUCCEEDED
+
+Total time: 0.3 seconds.
+

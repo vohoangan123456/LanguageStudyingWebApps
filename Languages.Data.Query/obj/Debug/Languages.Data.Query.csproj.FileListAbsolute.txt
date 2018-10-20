@@ -1,0 +1,2 @@
+E:\my_project\LanguageStudyingWebApps\Languages.Data.Query\obj\Debug\Languages.Data.Query.csprojAssemblyReference.cache
+E:\my_project\LanguageStudyingWebApps\Languages.Data.Query\obj\Debug\Languages.Data.Query.csproj.CoreCompileInputs.cache
