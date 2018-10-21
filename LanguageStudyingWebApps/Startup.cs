@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Languages.Business;
+using Languages.Common;
+using Languages.Common.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,8 +34,12 @@ namespace LanguageStudyingWebApps
             {
                 configuration.RootPath = "ClientApp/dist";
             });
+            services.AddSingleton<IConfiguration>(Configuration);
 
-            services.Configure<ConnectionConfig>(Configuration.GetSection("ConnectionStrings"));
+            // Repositories
+            services.AddTransient<ICategoriesService, CategoriesService>();
+
+            services.AddTransient<IApplicationConfigurationManager, ApplicationConfigurationManager>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

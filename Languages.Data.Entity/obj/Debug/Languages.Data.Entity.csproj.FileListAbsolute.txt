@@ -1,1 +1,11 @@
 E:\my_project\LanguageStudyingWebApps\Languages.Data.Entity\obj\Debug\Languages.Data.Entity.csproj.CoreCompileInputs.cache
+E:\my_project\LanguageStudyingWebApps\Languages.Data.Entity\obj\Debug\Languages.Data.Entity.csprojAssemblyReference.cache
+E:\my_project\LanguageStudyingWebApps\Languages.Data.Entity\bin\Debug\Languages.Data.Entity.dll.config
+E:\my_project\LanguageStudyingWebApps\Languages.Data.Entity\bin\Debug\Languages.Data.Entity.dll
+E:\my_project\LanguageStudyingWebApps\Languages.Data.Entity\bin\Debug\Languages.Data.Entity.pdb
+E:\my_project\LanguageStudyingWebApps\Languages.Data.Entity\bin\Debug\Languages.Business.Entity.dll
+E:\my_project\LanguageStudyingWebApps\Languages.Data.Entity\bin\Debug\Languages.Business.Entity.pdb
+E:\my_project\LanguageStudyingWebApps\Languages.Data.Entity\bin\Debug\Languages.Business.Entity.dll.config
+E:\my_project\LanguageStudyingWebApps\Languages.Data.Entity\obj\Debug\Languages.Data.Entity.csproj.CopyComplete
+E:\my_project\LanguageStudyingWebApps\Languages.Data.Entity\obj\Debug\Languages.Data.Entity.dll
+E:\my_project\LanguageStudyingWebApps\Languages.Data.Entity\obj\Debug\Languages.Data.Entity.pdb

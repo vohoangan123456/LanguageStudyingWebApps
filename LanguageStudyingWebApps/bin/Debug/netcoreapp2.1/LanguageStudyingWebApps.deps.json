@@ -24,6 +24,8 @@
     ".NETCoreApp,Version=v2.1": {
       "LanguageStudyingWebApps/1.0.0": {
         "dependencies": {
+          "Languages.Business": "1.0.0",
+          "Languages.Common": "1.0.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1"
@@ -510,6 +512,90 @@
           "System.Runtime.Extensions": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Threading.Tasks": "4.3.0"
+        }
+      },
+      "Languages.Business/1.0.0": {
+        "dependencies": {
+          "Languages.Business.Entity": "1.0.0",
+          "Languages.DataLayer": "1.0.0"
+        },
+        "runtime": {
+          "Languages.Business.dll": {}
+        },
+        "compile": {
+          "Languages.Business.dll": {}
+        }
+      },
+      "Languages.Business.Entity/1.0.0": {
+        "runtime": {
+          "Languages.Business.Entity.dll": {}
+        },
+        "compile": {
+          "Languages.Business.Entity.dll": {}
+        }
+      },
+      "Languages.Common/1.0.0": {
+        "runtime": {
+          "Languages.Common.dll": {}
+        },
+        "compile": {
+          "Languages.Common.dll": {}
+        }
+      },
+      "Languages.Data.Common/1.0.0": {
+        "dependencies": {
+          "Languages.Common": "1.0.0"
+        },
+        "runtime": {
+          "Languages.Data.Common.dll": {}
+        },
+        "compile": {
+          "Languages.Data.Common.dll": {}
+        }
+      },
+      "Languages.Data.Entity/1.0.0": {
+        "dependencies": {
+          "Languages.Business.Entity": "1.0.0"
+        },
+        "runtime": {
+          "Languages.Data.Entity.dll": {}
+        },
+        "compile": {
+          "Languages.Data.Entity.dll": {}
+        }
+      },
+      "Languages.Data.Query/1.0.0": {
+        "dependencies": {
+          "Languages.Data.Common": "1.0.0",
+          "Languages.Data.Entity": "1.0.0",
+          "Dapper": "1.50.5.0"
+        },
+        "runtime": {
+          "Languages.Data.Query.dll": {}
+        },
+        "compile": {
+          "Languages.Data.Query.dll": {}
+        }
+      },
+      "Languages.DataLayer/1.0.0": {
+        "dependencies": {
+          "Languages.Business.Entity": "1.0.0",
+          "Languages.Data.Entity": "1.0.0",
+          "Languages.Data.Query": "1.0.0"
+        },
+        "runtime": {
+          "Languages.DataLayer.dll": {}
+        },
+        "compile": {
+          "Languages.DataLayer.dll": {}
+        }
+      },
+      "Dapper.Reference/1.50.5.0": {
+        "runtime": {
+          "Dapper.dll": {
+            "assemblyVersion": "1.50.5.0",
+            "fileVersion": "1.50.5.0"
+          }
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3638,6 +3724,46 @@
       "path": "system.linq.parallel/4.3.0",
       "hashPath": "system.linq.parallel.4.3.0.nupkg.sha512"
     },
+    "Languages.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Languages.Business.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Languages.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Languages.Data.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Languages.Data.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Languages.Data.Query/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Languages.DataLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Dapper.Reference/1.50.5.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",
       "serviceable": true,
@@ -4418,14 +4544,14 @@
     "Microsoft.Extensions.Configuration/2.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1JaydycXzbfAExlsD7XIWykzVnU/wZM86KzrHyGlXuxqnqzcWSXLJn4Ejn8bDnq07CEJNZ+GjsxWKlJ8kFfnvQ==",
+      "sha512": "sha512-VVYOfsEO/kjpMiXfSVV6zDV0jOzM7y9rpWqPRNfkHidGJlZbut9OW4ehgBb82h5al0cpQoeNBqFKJZ2Q8/qwHQ==",
       "path": "microsoft.extensions.configuration/2.1.1",
       "hashPath": "microsoft.extensions.configuration.2.1.1.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration.Abstractions/2.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-9EMhOWU2eOQOtMIJ+vfwKJpnLRc1Wl3vXu8qXeevA91cSY4j3WvArmF7ApGtJwa7yKewJTvlQlBSn9OSnLFg6Q==",
+      "sha512": "sha512-QN0e+FNqqmmFomoRGmjg4VsbXofdTe6jl2C5CoYi34V4cdFT4x+KyBPZ1femUS4+tg/BK+m2YgCHGrcICYb2Ng==",
       "path": "microsoft.extensions.configuration.abstractions/2.1.1",
       "hashPath": "microsoft.extensions.configuration.abstractions.2.1.1.nupkg.sha512"
     },
@@ -4677,7 +4803,7 @@
     "Microsoft.Extensions.Primitives/2.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Svz25/egj1TsNL4118jyMqkhDiu0l8QYWq2p52P4BBN0GbqwR18ZRIctSP5TTDJy0m0EFC8aB2FOVjGtvEGWSA==",
+      "sha512": "sha512-jVkZs8NkUIhooFh8iJFIGJAJAeTrwORjM06i4sBw+/VVC8zcqduCIG1QCqjxbGACbR+GkLEnhZdxLjL8qHLHIg==",
       "path": "microsoft.extensions.primitives/2.1.1",
       "hashPath": "microsoft.extensions.primitives.2.1.1.nupkg.sha512"
     },
@@ -5132,7 +5258,7 @@
     "System.Memory/4.5.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-vcG3/MbfpxznMkkkaAblJi7RHOmuP7kawQMhDgLSuA1tRpRQYsFSCTxRSINDUgn2QNn2jWeLxv8er5BXbyACkw==",
+      "sha512": "sha512-oonnLQPZAGD21qtNMG4EtVmbYOInk2jV7M+g108B6OHOb67ZOaWnA/K8P5oQ6uK9wxKzB1iEXSChQOi2scKOqA==",
       "path": "system.memory/4.5.1",
       "hashPath": "system.memory.4.5.1.nupkg.sha512"
     },
@@ -5251,7 +5377,7 @@
     "System.Runtime.CompilerServices.Unsafe/4.5.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qUJMNWhbm9oZ3XaMFiEMiYmRPszbnXIkRIi7+4b2Md2xZ6JUOepf0/kY3S85qistRohl9OdMe4PsO+RdG2kTIQ==",
+      "sha512": "sha512-x/3d5xb+mc9e4I2GOOT+HPRWMZLbYjNN/kYKsb0fyUKcWizn/t1CIrGRLIBhv7H0ptYEt+WTTztdPmwSUMyKig==",
       "path": "system.runtime.compilerservices.unsafe/4.5.1",
       "hashPath": "system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
     },

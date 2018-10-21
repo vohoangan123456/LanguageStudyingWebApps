@@ -1,4 +1,5 @@
 ﻿using Languages.Common.Interfaces;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
@@ -13,12 +14,19 @@ namespace Languages.Common
         private const string LanguagesConfigurationFileName = "Languages.config";
 
         private NameValueCollection m_AppSettings;
-        public ApplicationConfigurationManager()
+        IConfiguration _configuration;
+        public ApplicationConfigurationManager(IConfiguration configuration)
         {
             m_AppSettings = ConfigurationManager.AppSettings;
+            _configuration = configuration;
             LoadLanguagesConfigurationSetting();
         }
 
+        public string GetConnectionStringCore(string key)
+        {
+            var connection = _configuration.GetSection("ConnectionStrings").GetSection("DefaultConnection").Value;
+            return connection;
+        }
         public string GetConnectionString(string key)
         {
             return ConfigurationManager.ConnectionStrings[key].ConnectionString;

@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{BFA8A374-765C-461D-883A-C9A0A9FBEBE3}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <RootNamespace>Languages.Data.Query</RootNamespace>
     <AssemblyName>Languages.Data.Query</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
@@ -53,6 +56,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\Languages.Data.Common\Languages.Data.Common.csproj">
+      <Project>{93a084ca-121f-41dd-a9c5-2f39f6cd0ab8}</Project>
+      <Name>Languages.Data.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Languages.Data.Entity\Languages.Data.Entity.csproj">
       <Project>{0e5a2fe9-8697-422a-a772-e9be9416740b}</Project>
       <Name>Languages.Data.Entity</Name>

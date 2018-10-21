@@ -1,2 +1,7 @@
 E:\my_project\LanguageStudyingWebApps\Languages.Business.Entity\obj\Debug\Languages.Business.Entity.csprojAssemblyReference.cache
 E:\my_project\LanguageStudyingWebApps\Languages.Business.Entity\obj\Debug\Languages.Business.Entity.csproj.CoreCompileInputs.cache
+E:\my_project\LanguageStudyingWebApps\Languages.Business.Entity\bin\Debug\Languages.Business.Entity.dll.config
+E:\my_project\LanguageStudyingWebApps\Languages.Business.Entity\bin\Debug\Languages.Business.Entity.dll
+E:\my_project\LanguageStudyingWebApps\Languages.Business.Entity\bin\Debug\Languages.Business.Entity.pdb
+E:\my_project\LanguageStudyingWebApps\Languages.Business.Entity\obj\Debug\Languages.Business.Entity.dll
+E:\my_project\LanguageStudyingWebApps\Languages.Business.Entity\obj\Debug\Languages.Business.Entity.pdb

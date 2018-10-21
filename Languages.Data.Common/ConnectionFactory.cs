@@ -9,7 +9,7 @@ namespace Languages.Data.Common
     public class ConnectionFactory : IConnectionFactory
     {
         private readonly string m_ConnectionString;
-        public ConnectionFactory(IRainCoatConfiguration configuration)
+        public ConnectionFactory(ILanguagesConfiguration configuration)
         {
             m_ConnectionString = configuration.ConnectionString;
         }

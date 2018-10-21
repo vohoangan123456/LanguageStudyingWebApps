@@ -1,38 +1,44 @@
-﻿using System;
+﻿using Dapper;
+using Languages.Data.Common;
+using Languages.Data.Common.Interfaces;
+using Languages.Data.Entity;
+using Languages.Data.Query.Extensions;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Languages.Data.Query
 {
-    public class CategoriesProcedures : ConnectionBase, ILanguagesProcedures
+    public class CategoriesProcedures : ConnectionBase, ICategoriesProcedures
     {
         public CategoriesProcedures(IConnectionFactory factory) : base(factory)
         {
         }
 
-        public int Create(LanguagesDTO request)
+        public int Create(CategoriesDTO request)
         {
             return Execute(
-                    connection => connection.Query<int>("[dbo].[CreateLanguage]",
+                    connection => connection.Query<int>("[dbo].[CreateNewCategory]",
                     new
                     {
-                        LanguageName = request.LanguageName
+                        CategoryName = request.Name
                     },
                     commandType: CommandType.StoredProcedure)
                 ).First();
         }
 
-        public bool Update(LanguagesDTO request)
+        public bool Update(CategoriesDTO request)
         {
             try
             {
-                Execute(connection => connection.Execute("[dbo].[UpdateLanguages]",
+                Execute(connection => connection.Execute("[dbo].[UpdateCategory]",
                     new
                     {
                         Id = request.Id,
-                        LanguageName = request.LanguageName
+                        Name = request.Name
                     },
                     commandType: CommandType.StoredProcedure));
                 return true;
@@ -48,7 +54,7 @@ namespace Languages.Data.Query
             DataTable idsTable = ids.ConvertToDataTable();
             try
             {
-                Execute(connection => connection.Execute("[dbo].[DeleteLanguages]",
+                Execute(connection => connection.Execute("[dbo].[DeleteCategory]",
                     new
                     {
                         Ids = idsTable
@@ -62,19 +68,9 @@ namespace Languages.Data.Query
             }
         }
 
-        public LanguagesDTO GetById(int id)
+        public IEnumerable<CategoriesDTO> GetActiveCategories()
         {
-            return Execute(connection => connection.Query<LanguagesDTO>("[dbo].[GetLanguagesById]",
-                new
-                {
-                    Id = id
-                },
-                commandType: CommandType.StoredProcedure)).First();
-        }
-
-        public IEnumerable<LanguagesDTO> GetActiveLanguages()
-        {
-            return Execute(connection => connection.Query<LanguagesDTO>("[dbo].[GetActiveLanguages]",
+            return Execute(connection => connection.Query<CategoriesDTO>("[dbo].[GetActiveCategories]",
                 new { },
                 commandType: CommandType.StoredProcedure));
         }

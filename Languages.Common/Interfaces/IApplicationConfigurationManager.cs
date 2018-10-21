@@ -5,6 +5,8 @@ namespace Languages.Common.Interfaces
     {
         string GetConnectionString(string key);
 
+        string GetConnectionStringCore(string key);
+
         string GetString(string key);
 
         bool GetBoolean(string key, bool defaultValue = false);

@@ -4615,6 +4615,88 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "Languages.Business/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Languages.Business.Entity": "1.0.0",
+          "Languages.DataLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Languages.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Languages.Business.dll": {}
+        }
+      },
+      "Languages.Business.Entity/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Languages.Business.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Languages.Business.Entity.dll": {}
+        }
+      },
+      "Languages.Common/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Languages.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Languages.Common.dll": {}
+        }
+      },
+      "Languages.Data.Common/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Languages.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Languages.Data.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Languages.Data.Common.dll": {}
+        }
+      },
+      "Languages.Data.Entity/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Languages.Business.Entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Languages.Data.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Languages.Data.Entity.dll": {}
+        }
+      },
+      "Languages.Data.Query/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Languages.Data.Common": "1.0.0",
+          "Languages.Data.Entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Languages.Data.Query.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Languages.Data.Query.dll": {}
+        }
+      },
+      "Languages.DataLayer/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Languages.Business.Entity": "1.0.0",
+          "Languages.Data.Entity": "1.0.0",
+          "Languages.Data.Query": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Languages.DataLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Languages.DataLayer.dll": {}
+        }
       }
     }
   },
@@ -6103,7 +6185,7 @@
       ]
     },
     "Microsoft.Extensions.Configuration/2.1.1": {
-      "sha512": "1JaydycXzbfAExlsD7XIWykzVnU/wZM86KzrHyGlXuxqnqzcWSXLJn4Ejn8bDnq07CEJNZ+GjsxWKlJ8kFfnvQ==",
+      "sha512": "VVYOfsEO/kjpMiXfSVV6zDV0jOzM7y9rpWqPRNfkHidGJlZbut9OW4ehgBb82h5al0cpQoeNBqFKJZ2Q8/qwHQ==",
       "type": "package",
       "path": "microsoft.extensions.configuration/2.1.1",
       "files": [
@@ -6115,7 +6197,7 @@
       ]
     },
     "Microsoft.Extensions.Configuration.Abstractions/2.1.1": {
-      "sha512": "9EMhOWU2eOQOtMIJ+vfwKJpnLRc1Wl3vXu8qXeevA91cSY4j3WvArmF7ApGtJwa7yKewJTvlQlBSn9OSnLFg6Q==",
+      "sha512": "QN0e+FNqqmmFomoRGmjg4VsbXofdTe6jl2C5CoYi34V4cdFT4x+KyBPZ1femUS4+tg/BK+m2YgCHGrcICYb2Ng==",
       "type": "package",
       "path": "microsoft.extensions.configuration.abstractions/2.1.1",
       "files": [
@@ -6566,7 +6648,7 @@
       ]
     },
     "Microsoft.Extensions.Primitives/2.1.1": {
-      "sha512": "Svz25/egj1TsNL4118jyMqkhDiu0l8QYWq2p52P4BBN0GbqwR18ZRIctSP5TTDJy0m0EFC8aB2FOVjGtvEGWSA==",
+      "sha512": "jVkZs8NkUIhooFh8iJFIGJAJAeTrwORjM06i4sBw+/VVC8zcqduCIG1QCqjxbGACbR+GkLEnhZdxLjL8qHLHIg==",
       "type": "package",
       "path": "microsoft.extensions.primitives/2.1.1",
       "files": [
@@ -9487,7 +9569,7 @@
       ]
     },
     "System.Memory/4.5.1": {
-      "sha512": "vcG3/MbfpxznMkkkaAblJi7RHOmuP7kawQMhDgLSuA1tRpRQYsFSCTxRSINDUgn2QNn2jWeLxv8er5BXbyACkw==",
+      "sha512": "oonnLQPZAGD21qtNMG4EtVmbYOInk2jV7M+g108B6OHOb67ZOaWnA/K8P5oQ6uK9wxKzB1iEXSChQOi2scKOqA==",
       "type": "package",
       "path": "system.memory/4.5.1",
       "files": [
@@ -10339,7 +10421,7 @@
       ]
     },
     "System.Runtime.CompilerServices.Unsafe/4.5.1": {
-      "sha512": "qUJMNWhbm9oZ3XaMFiEMiYmRPszbnXIkRIi7+4b2Md2xZ6JUOepf0/kY3S85qistRohl9OdMe4PsO+RdG2kTIQ==",
+      "sha512": "x/3d5xb+mc9e4I2GOOT+HPRWMZLbYjNN/kYKsb0fyUKcWizn/t1CIrGRLIBhv7H0ptYEt+WTTztdPmwSUMyKig==",
       "type": "package",
       "path": "system.runtime.compilerservices.unsafe/4.5.1",
       "files": [
@@ -12208,10 +12290,47 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "Languages.Business/1.0.0": {
+      "type": "project",
+      "path": "../Languages.Business/Languages.Business.csproj",
+      "msbuildProject": "../Languages.Business/Languages.Business.csproj"
+    },
+    "Languages.Business.Entity/1.0.0": {
+      "type": "project",
+      "path": "../Languages.Business.Entity/Languages.Business.Entity.csproj",
+      "msbuildProject": "../Languages.Business.Entity/Languages.Business.Entity.csproj"
+    },
+    "Languages.Common/1.0.0": {
+      "type": "project",
+      "path": "../Languages.Common/Languages.Common.csproj",
+      "msbuildProject": "../Languages.Common/Languages.Common.csproj"
+    },
+    "Languages.Data.Common/1.0.0": {
+      "type": "project",
+      "path": "../Languages.Data.Common/Languages.Data.Common.csproj",
+      "msbuildProject": "../Languages.Data.Common/Languages.Data.Common.csproj"
+    },
+    "Languages.Data.Entity/1.0.0": {
+      "type": "project",
+      "path": "../Languages.Data.Entity/Languages.Data.Entity.csproj",
+      "msbuildProject": "../Languages.Data.Entity/Languages.Data.Entity.csproj"
+    },
+    "Languages.Data.Query/1.0.0": {
+      "type": "project",
+      "path": "../Languages.Data.Query/Languages.Data.Query.csproj",
+      "msbuildProject": "../Languages.Data.Query/Languages.Data.Query.csproj"
+    },
+    "Languages.DataLayer/1.0.0": {
+      "type": "project",
+      "path": "../Languages.DataLayer/Languages.DataLayer.csproj",
+      "msbuildProject": "../Languages.DataLayer/Languages.DataLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "Languages.Business >= 1.0.0",
+      "Languages.Common >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.1"
@@ -12246,7 +12365,14 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\my_project\\LanguageStudyingWebApps\\Languages.Business\\Languages.Business.csproj": {
+              "projectPath": "E:\\my_project\\LanguageStudyingWebApps\\Languages.Business\\Languages.Business.csproj"
+            },
+            "E:\\my_project\\LanguageStudyingWebApps\\Languages.Common\\Languages.Common.csproj": {
+              "projectPath": "E:\\my_project\\LanguageStudyingWebApps\\Languages.Common\\Languages.Common.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -14,7 +14,7 @@ namespace Languages.Common
 
         private void Initialize()
         {
-            ConnectionString = m_ConfigurationManager.GetConnectionString(DefaultConnectionStringKey);
+            ConnectionString = m_ConfigurationManager.GetConnectionStringCore(DefaultConnectionStringKey);
         }
 
         public string ConnectionString { get; private set; }
